@@ -10,6 +10,7 @@ a {
     text-decoration: none;
 }
 h1 {
+    margin-top:0;
     background: #FFBF00;
     color: #FFFFFF;
     padding:20px;
