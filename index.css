@@ -6,6 +6,9 @@ body {
     color: #555555;
 }
 
+a {
+    text-decoration: none;
+}
 h1 {
     background: #FFBF00;
     color: #FFFFFF;
@@ -41,17 +44,28 @@ hr {
 img {
     padding-left:20px;
     padding-right:20px;
-    width:100%;
+    max-width:100%;
     box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
 }
 
-#jump {
-    position:fixed;
-    bottom:60px;
-    right: 20px;
-    background: #FFBF00;
-    padding:10px;
-    border: solid 1px #3F6F7F;
-    color: #FFFFFF;
-    text-decoration: none;
+.alignTextRight {
+    text-align: right;
+}
+
+ul {
+    margin-left: 20px;
+    color: #FFBF00;
+}
+
+blockquote {
+    background: #EFEFEF;
+    background-image: url('/images/quote_tiny.png');
+    background-repeat:no-repeat;
+    background-position: 5px 5px;
+    font-size:0.8em;
+    font-family: serif;
+    padding: 10px;
+    padding-left: 50px;
 }

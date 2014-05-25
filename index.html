@@ -1,29 +1,42 @@
-<head>
-<title>nabs - Home</title>
-<link rel="stylesheet" type="text/css" href="index.css">
-<link href='http://fonts.googleapis.com/css?family=Puritan:400,700,400italic' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<h1>not A Blues Singer</h1>
-    <h2>Demonstrating a few HTML features</h2>
-    <img src="http://cdn.morguefile.com/imageData/public/files/g/greyerbaby/preview/fldr_2012_05_20/file2341337572086.jpg" />
-<p>    HTML is really a very simple language. It consists of ordinary text, with commands that are enclosed by "<" and ">" characters, or bewteen an "&" and a ";". </p><P>
-    You don't really need to know much HTML to create a page, because you can copy bits of HTML from other pages that do what you want, then change the text!<P>
-    This page shows on the left as it appears in your browser, and the corresponding HTML code appears on the right. The HTML commands are linked to explanations of what they do.
-    <H3>Line Breaks</H3>
-<p>    HTML doesn't normally use line breaks for ordinary text. A white space of any size is treated as a single space. This is because the author of the page has no way of knowing the size of the reader's screen, or what size type they will have their browser set for.</p><P>
-
-    If you want to put a line break at a particular place, you can use the "<BR>" command, or, for a paragraph break, the command, which will insert a blank line. The heading command ("<4></4>") puts a blank line above and below the heading text.
-    <H4>Starting and Stopping Commands</H4>
-<p>    Most HTML commands come in pairs: for example, The closing command is always the same as the opening command, except for the addition of the "/".</p><P>
-    <p>Modifiers are sometimes included along with the basic command, inside the opening command's < >. The modifier does not need to be repeated in the closing command.
-    </p>
-        <hr>
-    <H1>This is a size "1" heading</H1>
-    <H2>This is a size "2" heading</H2>
-    <H3>This is a size "3" heading</H3>
-    <H4>This is a size "4" heading</H4>
-    <H5>This is a size "5" heading</H5>
-    <H6>This is a size "6" heading</H6>
-    <a href="#" id="jump">&#x25B2;</a>
-</body>
+<html>
+    <head>
+        <title>nabs - Home</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href='http://fonts.googleapis.com/css?family=Puritan:400,700,400italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1>not A Blues Singer</h1>
+        <h2>Does responsive have to be hard?</h2>
+        <img src="/images/Responsive_Web_Design.png" />
+        <p>I have used a number of 'responsive' frameworks, including <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://foundation.zurb.com/">Foundation from Zurb</a> and <a href="http://www.getskeleton.com/">Skeleton</a>.</p>
+        <p>I like them, they serve a purpose and do their job very well. But it can still be a bit of messing about. The immediate issues I see are;</p>
+        <ul>
+            <li>Old IE. <small>We all hate it, but it's still alive and doesn't like media queries</small></li>
+            <li>An almost unlimited variation in resolutions <small>I've seen bootstrap struggle with this</small></li>
+            <li>Accessibility <small>Have you tried your site in a screen reader</small></li>
+            <li>Extra payload <small>So many more files / http requests</small></li>
+        </ul>
+        <p>The final thing that bothers me is the real kicker. HTML by default is responsive. More responsive than the site we end up with when using one of these frameworks!</p>
+        <p>To see how everything works for the lowest common denominator, I love to test my sites in a text only browser, try <a href="http://lynx.isc.org/">Lynx</a> and see how yours fairs!</p>
+        <h3>The challenge</h3>
+        <p>Well, it's quite simple really.<br /> I've setup this site, which I intend to use exclusively for my entire web presence <small>(which is not exactly significant)</small> using nothing by standard HTML and sparing CSS <small>(only for basic styling)</small></p>
+        <p>I will have full navigation, blog post indexing, images as required and some more features when I think of them. I will NOT deviate from standard HTML. I will use one CSS file, which is open for all to read <small>(I don't do CSS on a daily basis, so suggestions for improvements are welcome)</small>.</p>
+        <section>
+            <h4>That's not difficult?</h4>
+            <p>I hear you, it's not really difficult and that, in a way, is the point.</p>
+            <p>The only trick here is getting the design right. Then, everything will stand up against the plethora of <code>yo HTML5Boilerplate</code> sites out there. <small>I really quite like <a href="http://yeoman.io/">yeoman</a>, but everything has its place! </small>If I really get the design right, it'll be better and still prove my point.</p>
+            <p>I will also not use any CMS. I'm writing in HTML now, but will move to markdown with a compiler soon, using GitHub hosted pages and Jekyll <small>(just to dispell the thoughts that I'm stuck in the dark ages)</small></p>
+        </section>
+        <section>
+            <h4>Why?</h4>
+            <p>One comment has had me thinking about this for a long while now. Actually, I've heard <a href="http://www.hpoom.co.uk">Simon Wood</a> say it a few times now and I think it is really just an extension of what <a href="http://2013.jsconf.eu/speakers/tom-dale-stop-breaking-the-web.html">Tom Dale</a> said;</p>
+            <blockquote>Stop breaking the web</blockquote>
+            <p>Tom covers off URLs and 'deep linking' , but where Simon goes further is by including other parts of pre-existing web standards, such as HTTP REST and HTML rendering, and open source. Why do we spend so much time re-inventing things. The majority of the time someone has already done what you want, so go and find it.</p>
+            <p>Some times you really don't need to look that far. You want a framework to produce responsive websites. Try HTML!</p>
+        </section>
+        <section>
+            <hr>
+            <h5 class="alignTextRight">by Rob Johnson <small>Sunday May 25 2014</small></h5>
+        </section>
+    </body>
+</html>
